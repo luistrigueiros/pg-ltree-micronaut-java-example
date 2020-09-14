@@ -1,4 +1,4 @@
-# Micronaut Data JDBC Java Example
+# Handling Tree data models with PostgreSQL and Java
 
 Based on http://patshaughnessy.net/2017/12/11/trying-to-represent-a-tree-structure-using-postgres
 

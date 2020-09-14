@@ -1,0 +1,18 @@
+micronaut:
+  application:
+    name: pg-ltree-micronaut-java
+jackson:
+  bean-introspection-module: true
+---
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/my_db
+    driverClassName: org.postgresql.Driver
+    username: developer
+    password: 'secret'
+    dialect: POSTGRES
+---
+flyway:
+  datasources:
+    default:
+      enabled: true

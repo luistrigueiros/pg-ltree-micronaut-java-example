@@ -1,0 +1,8 @@
+CREATE EXTENSION IF NOT EXISTS LTREE;
+CREATE TABLE tree(
+    id SERIAL PRIMARY KEY,
+    letter CHARACTER,
+    path LTREE
+);
+
+CREATE INDEX tree_path_idx ON tree USING GIST (path);
